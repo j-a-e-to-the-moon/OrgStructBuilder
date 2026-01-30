@@ -38,7 +38,7 @@ namespace OrgStructBuilder
             for (int i = 0; i < n; i++) H[i, i] = 0.0;
 
             double epsilon = Math.Pow(10, -8);
-            for (int iter = 0; iter < 1000; iter++)
+            for (int iter = 0; iter < MaxIterations; iter++)
             {
                 var R_old = R.Clone();
 
@@ -66,7 +66,7 @@ namespace OrgStructBuilder
             {
                 FromId = fromId,
                 ToId = toId,
-                DIrectOwnershipPercent = directOwnership,
+                DirectOwnershipPercent = directOwnership,
                 TotalOwnershipPercent = totalOwnership,
             };
         }
