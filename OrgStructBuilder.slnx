@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OrgStructBuilder/OrgStructBuilder.csproj" />
+  <Project Path="OrgStructTest/OrgStructTest.csproj" />
+</Solution>
