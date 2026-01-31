@@ -1,4 +1,4 @@
-﻿namespace OrgStructBuilder
+﻿namespace OrgStructBuilder.OwnershipEngine
 {
     public class EdgesDTO
     {

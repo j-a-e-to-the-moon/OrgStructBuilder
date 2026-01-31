@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OrgStructBuilder
+namespace OrgStructBuilder.OwnershipEngine
 {
     internal interface IOwnershipCalculationStrategy
     {
-        double[,] ProcessMatrix(double[,] matrix, OrgStructBuildOption option);
+        double[,] ProcessMatrix(double[,] matrix, OwnershipBuildOption option);
     }
 }

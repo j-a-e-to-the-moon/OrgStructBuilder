@@ -1,27 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
 
-	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
+    <PackageId>OrgStructBuilder</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Jaewon Kim (Jae)</Authors>
+    <Company>PwC Korea</Company>
+    <Description>A professional library for calculating Direct/Indirect Ownership and Analyzing Corporate Structures (Tier, LeafCount, Depth) using Matrix Operations.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/j-a-e-to-the-moon/OrgStructBuilder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/j-a-e-to-the-moon/OrgStructBuilder</RepositoryUrl>
+    <PackageTags>Ownership;Matrix;CircularOwnership;Finance;Tax;Pillar2;Hierarchy</PackageTags>
 
-		<PackageId>OrgStructBuilder</PackageId>
-		<Version>1.0.0</Version>
-		<Authors>YourName</Authors>
-		<Company>YourCompanyOrName</Company>
-		<Description>순환 출자 및 간접 지분 구조를 행렬 연산으로 계산하는 라이브러리입니다.</Description>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/YourID/OrgStructBuilder</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/YourID/OrgStructBuilder</RepositoryUrl>
-		<PackageTags>Ownership;Matrix;CircularOwnership;Finance</PackageTags>
-	</PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<InternalsVisibleTo Include="OrgStructBuilder.Tests" />
-	</ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="OrgStructBuilder.Tests" />
+  </ItemGroup>
 
-	<ItemGroup>
-	  <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\publish.yml" />
+  </ItemGroup>
 </Project>
